@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment two</title>
+</head>
+<body>
+    <div class="form" id="one">
+        <input type="text" placeholder="enter your data" id="take" autofocus>
+        <button onclick="add()">Add to Array</button>
+        <button   class="btn"    onclick="print()">PrintArray</button>
+
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+        let a =document.querySelector(".form")
+        let b =document.querySelector("#take")
+        let c = document.querySelector("p")
+
+        const prints = document.querySelector(".btn")
+
+        let nothing=[]
+
+   function add(){
+    
+        nothing.push(b.value);  
+        b.value = " "
+        console.log(nothing);
+
+    
+      
+       
+    }
+
+    function print(){
+        // for(i=nothing.length-1; i>=0;i--)
+        //     {
+        //         c.innerHTML += nothing[i]+","
+
+        //     }
+
+            
+            c.innerHTML = nothing.reverse()
+        
+    }
+
+   
+
+
+    </script>
+</body>
+</html>

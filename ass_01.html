@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment first</title>
+</head>
+<body>
+    <div class="form" id="one">
+        <input type="text" placeholder="enter your data" id="take">
+        <button onclick="add()">Add to Array</button>
+        <button onclick="print()">PrintArray</button>
+        <p></p>
+    </div>
+
+    <script>
+        let a =document.querySelector(".form")
+        let b =document.querySelector("#take")
+        let c = document.querySelector("p")
+
+        let nothing=[]
+
+   function add(){
+        // for(j=0;j<=b.length;j++){
+        nothing.push(b.value);
+        console.log(nothing);
+        // }
+    }
+
+    function print(){
+        for(i=0;i<nothing.length;i++)
+            {
+                c.innerHTML += nothing[i]+","
+            }
+    }
+
+
+    </script>
+</body>
+</html>
